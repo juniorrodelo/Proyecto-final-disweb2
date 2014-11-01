@@ -4,10 +4,9 @@
 session_start();
 
 if (isset($_SESSION['admin'])) {
-  echo "Bienvenido ".$_SESSION['admin'];
+  header("location:plataform/dashboard.html");
+  //echo "Bienvenido ".$_SESSION['admin'];
 }else{
-
-
 
  ?>
 

@@ -103,7 +103,7 @@
             <form class="" method="post" action="procesor/comprobacion.php">
   
                 <div class="form-group">
-                    <input type="text" class="form-control input-lg" name="user" placeholder="Codigo de Savio">
+                    <input type="text" class="form-control input-lg" name="codigo" placeholder="Codigo de Savio">
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control input-lg" name="pass" placeholder="contraseña">
