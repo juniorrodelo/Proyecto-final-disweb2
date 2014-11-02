@@ -41,13 +41,20 @@ if (!$codigo=="") {
 
 if (strpos($code, $codigo) && strpos($pass, $password)) {
 	$_SESSION['admin'] = $codigo;
-	echo "incio sesion";
-}else{
-	$_SESSION['error'] = "Login Incorrecto";
-	echo "no pudo inciiar";
+	
+}elseif (strpos($code, $codigo) && !strpos($pass, $password)) {
+	$error_pass = "<i>* La contraseña no concuerda con el Código.</i>";
+
+}elseif (!strpos($code, $codigo) && !strpos($pass, $password)) {
+	$error_login = "<i>* Usted no se ha registrado.</i>";
 }
 
-header("location:../index.php");
+else{
+	$_SESSION['error'] = "Login Incorrecto";
+
+}
+
+header("location:../login.php");
 
 
 

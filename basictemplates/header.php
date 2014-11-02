@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,8 +42,8 @@
 
                 <ul class="nav navbar-nav navbar-right">
                      
-                     <li><a href="" class="scroll btn btn-success" data-toggle="modal" data-target="#login" style="font-weight:600;margin-right:12px;">INGRESAR CON MI CUENTA</a></li>
-                     <li><a href="" class="scroll btn btn-warning" data-toggle="modal" data-target="#myModal" style="font-weight:600;">REGISTRARME</a></li>
+                     <li><a href="login.php" class="scroll btn btn-success" style="font-weight:600;margin-right:12px;">INGRESAR CON MI CUENTA</a></li>
+                     <li><a href="register.php" class="scroll btn btn-warning" style="font-weight:600;">REGISTRARME</a></li>
                 </ul>
             </div>
            
@@ -60,8 +62,9 @@
             <h4 class="modal-title text-center" id="myModalLabel">REGISTRATE</h4>
           </div>
           <div class="modal-body">
-            <form class="" action="procesor/register_user.php" method="post" enctype="multipart/form-data">
+            <form class="" action="" method="post" enctype="multipart/form-data">
                 <div class="form-group">
+
                     <input type="text" class="form-control input-lg" name="names" placeholder="Nombres">
                 </div>
                 <div class="form-group">
@@ -81,7 +84,7 @@
                     <input type="password" class="form-control input-lg" name="password" placeholder="Contraseña">
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-success btn-lg btn-block">Registrarme!</button>
+                    <button type="submit" name="send" class="btn btn-success btn-lg btn-block">Registrarme!</button>
                 </div>
             </form>
 
@@ -100,7 +103,7 @@
             <h4 class="modal-title text-center" id="myModalLabel">INICIAR SESIÓN</h4>
           </div>
           <div class="modal-body">
-            <form class="" method="post" action="procesor/comprobacion.php">
+            <form class="" method="post" action="procesor/autentication.php">
   
                 <div class="form-group">
                     <input type="text" class="form-control input-lg" name="codigo" placeholder="Codigo de Savio">
@@ -120,4 +123,6 @@
 
     </div>
     <!-- MODALS END-->
+
+
 
