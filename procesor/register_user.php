@@ -113,7 +113,7 @@ function Registrar($firts_name, $firts_lastname, $profession, $codigo, $password
 			fputs($file,$profession." | ");
 			fputs($file,$codigo." | ");
 			fputs($file,$password." | ");
-			fputs($file,$profile_avatar." | "." / "." \n");
+			fputs($file,$profile_avatar." / "." \n"." \n");
 			fclose($file);
 
 			header("location:welcome.php");

@@ -1,11 +1,11 @@
 
 <?php 
+
 session_start();
 
-
 if (isset($_SESSION['admin'])) {
-  header("location:acount/dashboard.html");
-  //echo "Bienvenido ".$_SESSION['admin'];
+	//echo "Bienvenido ".$_SESSION['admin'];
+	header("location:acount/dashboard.html");
 }else{
 
  ?>
@@ -52,7 +52,7 @@ if (isset($_SESSION['admin'])) {
 						<strong class=""> Iniciar Sesión</strong>
 					</div>
 					<div class="panel-body">
-						<form role="form" action="login.php" method="POST">
+						<form role="form" action="procesor/autentication.php" method="POST">
 							<fieldset>
 								<div class="row">
 									<div class="center-block">
@@ -63,12 +63,24 @@ if (isset($_SESSION['admin'])) {
 								<div class="row">
 									<div class="col-sm-12 col-md-10  col-md-offset-1 ">
 										<div class="form-group">
-										<label for=""><?php if(isset($error_login)){ echo "<br/>".$error_login;} ?></label>
+										<label for=""><?php if (isset($_SESSION['error']) ) {
+										    echo $_SESSION['error'];
+										    unset($_SESSION['error']);} ?>
+										  </label>
 											<div class="input-group">
 												<span class="input-group-addon">
 													<i class="glyphicon glyphicon-user"></i>
 												</span> 
-												<input class="form-control" placeholder="Codigo de Savio" name="codigo" type="text" autofocus>
+
+
+
+
+													 <?php if(isset($_POST['send'])){ ?>
+													<input type="text" class="form-control" name="codigo" value="<?php if(isset($codigo)){ echo $codigo;} ?>"  >
+													<?php }else{ ?>
+								                    <input type="text" class="form-control" name="codigo" placeholder="Codigo de Savio" autofocus>
+								                     <?php } ?>
+
 											</div>
 										</div>
 										<div class="form-group">
@@ -96,11 +108,7 @@ if (isset($_SESSION['admin'])) {
 </html>
 
 <?php 
-  if (isset($_SESSION['llene']) ) {
-    echo $_SESSION['llene'];
-    unset($_SESSION['llene']);
-
-  }elseif (isset($_SESSION['error'])) {
+  if (isset($_SESSION['error'])) {
     unset($_SESSION['error']);
   }
 }

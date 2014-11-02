@@ -1,7 +1,2 @@
-Jose | Riveras | Ingenieria De Ambiente | T0001234 | junior | 2014-03-31 16.57.47.jpg |  /  
-Andrees | Romero | Ingenieria De Ambiente | T000123444 | mama01 | 10247203_1424735997786278_2462871398443003556_n.jpg |  /  
-Josefa | Andrade | Comunicacion Social | T00056444 | junior | 10273560_10203515933355469_1726893718613928235_n.jpg |  /  
-Melissa | Polo | Ingenieria De Ambiente | T00036721 | papa06 | 478926_3511699387695_290215307_o.jpg |  /  
-Wendy | Rode | Tecnolgia en Sistemas | T00036721 | papa06 | 1538677_10200831769511088_1120357436_n.jpg |  /  
-Yoly | Coroando | Ingenieria De Ambiente | T0003672 | papa06 | 1398565_10202454720034430_859839924_o.jpg |  /  
-Jesus | Marrugo | Tecnologia en Sistemas | T000123 | papa06 | 10153705_10201461008801677_8120535145086035926_n.jpg |  /  
+Alfredo | Rodelo | Tecnologia en Sistemas | T00036721 | papa06 | 1398565_10202454720034430_859839924_o.jpg /  
+ 

@@ -40,17 +40,17 @@ if (!$codigo=="") {
 
 
 if (strpos($code, $codigo) && strpos($pass, $password)) {
-	$_SESSION['admin'] = $codigo;
+	$_SESSION['admin'] = true;
 	
 }elseif (strpos($code, $codigo) && !strpos($pass, $password)) {
-	$error_pass = "<i>* La contraseña no concuerda con el Código.</i>";
+	$_SESSION['error'] = "La contraseña es incorrecta";
 
-}elseif (!strpos($code, $codigo) && !strpos($pass, $password)) {
-	$error_login = "<i>* Usted no se ha registrado.</i>";
+}elseif (empty($codigo) && empty($password)) {
+	$_SESSION['error'] = "Debes Ingresar el código y la contraseña";
 }
 
 else{
-	$_SESSION['error'] = "Login Incorrecto";
+	$_SESSION['error'] = "Debe Ingresar una contraseña";
 
 }
 
