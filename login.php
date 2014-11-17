@@ -5,7 +5,7 @@ session_start();
 
 if (isset($_SESSION['admin'])) {
 	//echo "Bienvenido ".$_SESSION['admin'];
-	header("location:acount/dashboard.html");
+	header("location:acount/dashboard.php");
 }else{
 
  ?>
@@ -100,7 +100,7 @@ if (isset($_SESSION['admin'])) {
 						</form>
 					</div>
 					<div class="panel-footer ">
-						Si no tienes una cuenta puedes <a href="#" onClick=""> Registrarte </a>
+						Si no tienes una cuenta puedes <a href="register.php" onClick=""> Registrarte </a>
 					</div>
                 </div>
 			</div>

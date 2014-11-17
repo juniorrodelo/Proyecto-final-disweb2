@@ -41,8 +41,15 @@ if (!$codigo=="") {
 
 if (strpos($code, $codigo) && strpos($pass, $password)) {
 	$_SESSION['admin'] = true;
+	$_SESSION['nombre'] = $firts_name;
+	$_SESSION['apellido'] = $firts_lastname;
+	$_SESSION['carrera'] = $profession;
+	$_SESSION['codigo'] = $code;
+	$_SESSION['password'] = $pass;
+	$_SESSION['avatar'] = $profile_avatar;
+
 	
-}elseif (strpos($code, $codigo) && !strpos($pass, $password)) {
+}elseif (!strpos($code, $codigo) && !strpos($pass, $password)) {
 	$_SESSION['error'] = "La contraseña es incorrecta";
 
 }elseif (empty($codigo) && empty($password)) {

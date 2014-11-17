@@ -105,7 +105,7 @@
             </form>
 					</div>
 					<div class="panel-footer ">
-						Siya estas Registrado <a href="#" onClick=""> Registrarte </a>
+						Si ya estas Registrado <a href="login.php" onClick=""> Inicia Sesión </a>
 					</div>
                 </div>
 			</div>

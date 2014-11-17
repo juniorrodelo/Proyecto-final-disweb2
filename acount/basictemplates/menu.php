@@ -1,38 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Shamcey - Metro Style Admin Template</title>
-<link rel="stylesheet" href="css/style.default.css" type="text/css" />
 
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
-<script type="text/javascript" src="js/modernizr.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.cookie.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-</head>
 
-<body class="errorpage">
 
 <div class="mainwrapper">
     
     <div class="header">
         <div class="logo">
-            <a href="dashboard.html"><img src="images/logo.png" alt="" /></a>
+            <a href="dashboard.php"><img src="images/logo.png" alt="" /></a>
         </div>
         <div class="headerinner">
             <ul class="headmenu">
                 <li class="odd">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <span class="count">4</span>
                         <span class="head-icon head-message"></span>
-                        <span class="headmenu-label">Messages</span>
+                        <span class="headmenu-label">MENSAJES</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="nav-header">Messages</li>
+                        <li class="nav-header">MENSAJES</li>
                         <li><a href=""><span class="icon-envelope"></span> New message from <strong>Jack</strong> <small class="muted"> - 19 hours ago</small></a></li>
                         <li><a href=""><span class="icon-envelope"></span> New message from <strong>Daniel</strong> <small class="muted"> - 2 days ago</small></a></li>
                         <li><a href=""><span class="icon-envelope"></span> New message from <strong>Jane</strong> <small class="muted"> - 3 days ago</small></a></li>
@@ -43,9 +26,8 @@
                 </li>
                 <li>
                     <a class="dropdown-toggle" data-toggle="dropdown" data-target="#">
-                    <span class="count">10</span>
                     <span class="head-icon head-users"></span>
-                    <span class="headmenu-label">New Users</span>
+                    <span class="headmenu-label">ALUMNOS</span>
                     </a>
                     <ul class="dropdown-menu newusers">
                         <li class="nav-header">New Users</li>
@@ -88,9 +70,8 @@
                 </li>
                 <li class="odd">
                     <a class="dropdown-toggle" data-toggle="dropdown" data-target="#">
-                    <span class="count">1</span>
                     <span class="head-icon head-bar"></span>
-                    <span class="headmenu-label">Statistics</span>
+                    <span class="headmenu-label">MIS NOTAS</span>
                     </a>
                     <ul class="dropdown-menu">
                         <li class="nav-header">Statistics</li>
@@ -106,11 +87,10 @@
                     <div class="userloggedinfo">
                         <img src="images/photos/thumb1.png" alt="" />
                         <div class="userinfo">
-                            <h5>Juan Dela Cruz <small>- juan@themepixels.com</small></h5>
+                            <h5> Hola Juan Dela Cruz</h5>
                             <ul>
-                                <li><a href="editprofile.html">Edit Profile</a></li>
-                                <li><a href="">Account Settings</a></li>
-                                <li><a href="index.html">Sign Out</a></li>
+                                <li><a href="editprofile.html">Perfil</a></li>
+                                <li><a href="../procesor/logout.php">Cerrar Sesión</a></li>
                             </ul>
                         </div>
                     </div>
@@ -119,18 +99,26 @@
         </div>
     </div>
     
-    <div class="errortitle">
-        <h4 class="animate0 fadeInUp">The page you are looking for has not been found.</h4>
-        <span class="animate1 bounceIn">4</span>
-        <span class="animate2 bounceIn">0</span>
-        <span class="animate3 bounceIn">4</span>
-        <div class="errorbtns animate4 fadeInUp">
-            <a onclick="history.back()" class="btn btn-primary btn-large">Go to Previous Page</a>
-            <a href="dashboard.html" class="btn btn-large">Go to Dashboard</a>
-        </div>
-    </div>
-    
-</div><!--mainwrapper-->
-
-</body>
-</html>
+    <div class="leftpanel">
+        
+        <div class="leftmenu">        
+            <ul class="nav nav-tabs nav-stacked">
+            	<li class="nav-header">Navigation</li>
+                <li class="active"><a href="dashboard.php"><span class="iconfa-laptop"></span> ÁREA PERSONAL</a></li>
+                <li class=""><a href="dashboard.php"><span class="iconfa-laptop"></span> MIS NOTAS</a></li>
+                <li class=""><a href="dashboard.php"><span class="iconfa-laptop"></span> ALUMNOS </a></li>
+                <li><a href="buttons.html"><span class="iconfa-hand-up"></span> MIS ARCHIVOS </a>
+                <li class="dropdown"><a href=""><span class="iconfa-th-list"></span> Three Level Menu Sample</a>
+                	<ul>
+                    	<li class="dropdown"><a href="">Second Level Menu</a>
+                        <ul>
+                            <li><a href="">Third Level Menu</a></li>
+                            <li><a href="">Another Third Level Menu</a></li>
+                        </ul>
+                     </li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--leftmenu-->
+        
+    </div><!-- leftpanel -->

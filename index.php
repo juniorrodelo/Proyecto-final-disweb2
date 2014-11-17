@@ -1,4 +1,12 @@
-﻿        
+<?php 
+
+session_start();
+
+if (isset($_SESSION['admin'])) {
+    //echo "Bienvenido ".$_SESSION['admin'];
+    header("location:acount/dashboard.php");
+}?>      
+
 <?php include("basictemplates/header.php"); ?>
 
 
